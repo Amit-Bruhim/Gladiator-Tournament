@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <sys/stat.h>
 
 int opponets_attack[3] = {0, 0, 0};
 
@@ -31,8 +32,9 @@ int main(int argc, char *argv[])
       opponets_attack[i] = opponent_attack;
    }
 
+   mkdir("logs", 0777);
    char log[64];
-   sprintf(log, "%s_log.txt", argv[1] + 5);
+   sprintf(log, "logs/%s_log.txt", argv[1] + 5);
    FILE *log_fp = fopen(log, "w");
    fprintf(log_fp, "Gladiator process started. %d: \n", getpid());
 
