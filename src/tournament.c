@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
       if (pid == 0)
       {
          char *args[] = {"gladiator",gladiator_files[i] , NULL};
-         execv("./src/gladiator", args);
+         execv("./bin/gladiator", args);
       }
       else{
          pids[i] = pid;
