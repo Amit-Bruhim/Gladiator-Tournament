@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
    {
       if (pids[i] == last)
       {
-         printf("The gods have spoken, the winner of the tournament is %s!\n", gladiator_names[i]);
+         printf("The gods have spoken, the winner of the tournament is \033[32m%s 🏆\033[0m!\n", gladiator_names[i]);
          break;
       }
    }
