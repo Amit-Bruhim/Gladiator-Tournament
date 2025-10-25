@@ -54,9 +54,9 @@ Follow these steps to set up the project locally:
 ```bash
 git clone https://github.com/Amit-Bruhim/Gladiator-Tournament.git
 ```
-### 2. Navigate into the src folder
+### 2. Navigate into the project folder
 ```bash
-cd Gladiator-Tournament/src
+cd Gladiator-Tournament
 ```
 
 ### 3. Compile the program using Make
